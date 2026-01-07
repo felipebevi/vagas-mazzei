@@ -36,7 +36,7 @@ const GarageMap = () => {
             </div>
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 bg-card border-2 border-border rounded" />
-              <span className="text-sm">Vagas de carro existentes (1 a 26)</span>
+              <span className="text-sm">Vagas de carro existentes (1 a 28)</span>
             </div>
           </div>
         </div>
