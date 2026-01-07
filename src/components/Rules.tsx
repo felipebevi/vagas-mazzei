@@ -80,10 +80,10 @@ const Rules = () => {
         {/* Call to action para ver documento completo */}
         <div className="text-center">
           <p className="text-muted-foreground mb-4">
-            O documento completo com todas as regras está disponível no álbum de fotos
+            O documento completo com todas as regras está disponível para consulta
           </p>
           <a 
-            href="https://photos.app.goo.gl/oV3NH6soBNURfFB2A"
+            href="https://drive.google.com/file/d/1ppIo5rhX0ZLOYEL_8_Z5gBrfUAS8kRc7/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full font-semibold hover:opacity-90 transition-opacity"
