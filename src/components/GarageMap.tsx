@@ -60,7 +60,9 @@ const GarageMap = () => {
           </a>
 
           <a 
-            href="#regras"
+            href="https://drive.google.com/file/d/1ppIo5rhX0ZLOYEL_8_Z5gBrfUAS8kRc7/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
             className="card-elevated p-6 flex items-center gap-4 hover:scale-[1.02] transition-all group"
           >
             <div className="w-14 h-14 bg-accent/20 rounded-xl flex items-center justify-center group-hover:bg-accent/30 transition-colors">
