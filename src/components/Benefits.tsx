@@ -69,16 +69,6 @@ const Benefits = () => {
           ))}
         </div>
 
-        {/* Destaque especial */}
-        <div className="mt-16 highlight-box text-center">
-          <h3 className="text-2xl font-bold mb-4 font-display">
-            💡 Lembre-se: A convenção pode ser atualizada!
-          </h3>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Justamente por não constar na convenção original, essa mudança pode ser aprovada 
-            pelos próprios moradores em assembleia. <strong className="text-foreground">Nós temos esse poder!</strong>
-          </p>
-        </div>
       </div>
     </section>
   );
