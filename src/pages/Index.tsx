@@ -4,6 +4,7 @@ import Solution from "@/components/Solution";
 import Benefits from "@/components/Benefits";
 import GarageMap from "@/components/GarageMap";
 import Rules from "@/components/Rules";
+import Timeline from "@/components/Timeline";
 import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
 
@@ -16,6 +17,7 @@ const Index = () => {
       <Benefits />
       <GarageMap />
       <Rules />
+      <Timeline />
       <CallToAction />
       <Footer />
     </main>

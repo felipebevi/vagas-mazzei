@@ -1,0 +1,203 @@
+import { AlertTriangle, FileText, Scale, Shield, Heart, ExternalLink, Ban, Megaphone, Gavel, Users } from "lucide-react";
+import convencaoVagasMoto from "@/assets/convencao-vagas-moto.png";
+import convencaoManobrista from "@/assets/convencao-manobrista.png";
+
+const Timeline = () => {
+  const events = [
+    {
+      icon: <Megaphone className="text-primary" size={20} />,
+      color: "bg-primary/10 border-primary/30",
+      title: "Campanha de Conscientização",
+      description: "Criação desta landing page e materiais para informar os moradores sobre a proposta de vagas para motos em espaços ociosos, pensando no bem-estar coletivo.",
+    },
+    {
+      icon: <Users className="text-highlight" size={20} />,
+      color: "bg-highlight/10 border-highlight/30",
+      title: "Assembleia Realizada",
+      description: "A proposta foi levada à assembleia com fotos, mapa e regras claras. Mesmo com espaços claramente disponíveis e sem atrapalhar ninguém, a discussão tomou outro rumo.",
+    },
+    {
+      icon: <Ban className="text-destructive" size={20} />,
+      color: "bg-destructive/10 border-destructive/30",
+      title: "Fake News: \"O condomínio vai ficar mais caro\"",
+      description: "A presidente da mesa afirmou que NÃO haveria mudança no valor do seguro, mas usou a frase \"aconselho a ver o valor do prêmio\" como pretexto. O síndico abraçou essa narrativa imediatamente, repetindo em voz alta que \"vai impactar no valor do condomínio\" — o que não é verdade.",
+    },
+    {
+      icon: <FileText className="text-accent-foreground" size={20} />,
+      color: "bg-accent/20 border-accent/40",
+      title: "Convenção Apresentada: 9 Vagas para Motos JÁ Existem",
+      description: "Durante a assembleia, a própria convenção do condomínio foi apresentada, revelando que JÁ EXISTEM 9 vagas para motocicletas previstas no documento oficial. Ninguém sequer sabia disso — nem síndico, nem administradora, nem moradores.",
+      highlight: true,
+    },
+    {
+      icon: <AlertTriangle className="text-warning" size={20} />,
+      color: "bg-warning/10 border-warning/30",
+      title: "Humilhação e Ataque Pessoal",
+      description: "Ao apresentar a convenção, a administradora do condomínio tomou a palavra e disse que eu deveria \"procurar via judicial com a construtora\" e que \"não era um problema a ser discutido\" — mesmo sendo uma regra que JÁ EXISTE na convenção vigente.",
+    },
+    {
+      icon: <Gavel className="text-primary" size={20} />,
+      color: "bg-primary/10 border-primary/30",
+      title: "Notificação Extrajudicial Enviada",
+      description: "Após a assembleia, foi enviada uma notificação extrajudicial à administradora e ao condomínio (na pessoa do síndico) solicitando a demarcação das vagas previstas na convenção. Após quase 1 mês, nenhuma resposta foi recebida.",
+    },
+    {
+      icon: <Shield className="text-destructive" size={20} />,
+      color: "bg-destructive/10 border-destructive/30",
+      title: "Agressão e Boletim de Ocorrência",
+      description: "Após a assembleia, um grupo de moradores apareceu na garagem para ataques verbais. Um deles partiu para agressão física, sendo impedido por outros moradores. Foi necessário buscar abrigo em outro local e registrar um B.O. de ameaça.",
+    },
+    {
+      icon: <Scale className="text-highlight" size={20} />,
+      color: "bg-highlight/10 border-highlight/30",
+      title: "Via Judicial: Última Alternativa",
+      description: "Sem resposta à notificação e após sofrer ameaças, a via judicial se tornou a única alternativa para garantir o cumprimento de algo que JÁ ESTÁ NA CONVENÇÃO — um direito de todos os moradores, não apenas de um.",
+    },
+  ];
+
+  return (
+    <section id="oque-aconteceu" className="py-20 px-4 bg-card">
+      <div className="container mx-auto max-w-5xl">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <span className="inline-flex items-center gap-2 px-4 py-2 bg-destructive/10 text-destructive rounded-full text-sm font-semibold mb-4">
+            <AlertTriangle size={16} />
+            Transparência Total
+          </span>
+          <h2 className="section-title">O Que Aconteceu</h2>
+          <p className="section-subtitle">
+            Este site foi criado para conscientização e diálogo. Mas a realidade que se seguiu precisa ser registrada com transparência.
+          </p>
+        </div>
+
+        {/* Contexto box */}
+        <div className="bg-primary/5 border-2 border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
+          <div className="flex items-start gap-3 mb-4">
+            <Heart className="text-primary flex-shrink-0 mt-1" size={24} />
+            <div>
+              <h3 className="text-xl font-bold font-display mb-2">Por que este site existe?</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Este site foi criado com o objetivo de <strong className="text-foreground">conscientizar</strong> os moradores, 
+                mostrar que motos em espaços ociosos <strong className="text-foreground">não ocupam nem atrapalham ninguém</strong>, 
+                e que não faz sentido uma moto usar uma vaga de carro quando pensamos na <strong className="text-foreground">coletividade 
+                e bem-estar de todos</strong>. Infelizmente, sem sucesso no diálogo, sou obrigado a buscar meus direitos sozinho, 
+                via judicial, por algo que <strong className="text-primary">já é regra na convenção do próprio condomínio</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Timeline */}
+        <div className="relative">
+          <div className="absolute left-6 md:left-8 top-0 bottom-0 w-0.5 bg-border" />
+          
+          <div className="space-y-8">
+            {events.map((event, index) => (
+              <div key={index} className={`relative flex gap-4 md:gap-6 ${event.highlight ? '' : ''}`}>
+                <div className={`relative z-10 w-12 h-12 md:w-16 md:h-16 rounded-full ${event.color} border-2 flex items-center justify-center flex-shrink-0`}>
+                  {event.icon}
+                </div>
+                <div className={`flex-1 ${event.highlight ? 'bg-accent/10 border-2 border-accent/30 rounded-xl p-5' : 'bg-background border border-border rounded-xl p-5'}`}>
+                  <h4 className="font-bold text-lg mb-2 font-display">{event.title}</h4>
+                  <p className="text-muted-foreground leading-relaxed">{event.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Convenção - Provas Documentais */}
+        <div className="mt-16">
+          <h3 className="text-2xl font-bold text-center mb-8 font-display">
+            📄 O Que Diz a Convenção do Condomínio
+          </h3>
+          
+          <div className="space-y-8">
+            {/* Prova 1: 9 vagas para motos */}
+            <div className="bg-success/5 border-2 border-success/20 rounded-2xl p-6 md:p-8">
+              <div className="flex items-center gap-2 mb-4">
+                <FileText className="text-success" size={20} />
+                <h4 className="font-bold text-lg text-success">9 Vagas Para Motos Já Existem na Convenção</h4>
+              </div>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                O item <strong className="text-foreground">b. 1.B</strong> da convenção estabelece claramente: o estacionamento possui capacidade para 
+                31 automóveis de passeio, sendo 20 vagas tipo, 8 vagas duplex, 1 vaga do zelador, 2 vagas de visitantes e 
+                <strong className="text-success"> 09 (nove) vagas para motos</strong>. Estas vagas já são previstas e pertencem ao condomínio.
+              </p>
+              <div className="image-frame max-w-3xl mx-auto">
+                <img 
+                  src={convencaoVagasMoto} 
+                  alt="Trecho da convenção mostrando 9 vagas para motos"
+                  className="w-full"
+                />
+                <div className="bg-card p-3 text-center">
+                  <p className="text-sm font-semibold text-success">✓ Trecho da convenção: 09 (nove) vagas para motos</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Prova 2: Manobrista */}
+            <div className="bg-highlight/5 border-2 border-highlight/20 rounded-2xl p-6 md:p-8">
+              <div className="flex items-center gap-2 mb-4">
+                <FileText className="text-highlight" size={20} />
+                <h4 className="font-bold text-lg text-highlight">Falta de Espaço Não Retira o Direito</h4>
+              </div>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                A própria convenção prevê que a garagem está <strong className="text-foreground">sujeita à utilização de manobrista</strong>, 
+                o que demonstra que mesmo com espaço limitado, <strong className="text-foreground">o direito de estacionamento dos veículos 
+                pelos apartamentos não pode ser negado</strong>. Se necessário, o uso de manobrista se torna obrigatório — 
+                a falta de espaço NÃO justifica negar vagas que já existem na convenção.
+              </p>
+              <div className="image-frame max-w-3xl mx-auto">
+                <img 
+                  src={convencaoManobrista} 
+                  alt="Trecho da convenção sobre uso de manobrista"
+                  className="w-full"
+                />
+                <div className="bg-card p-3 text-center">
+                  <p className="text-sm font-semibold text-highlight">✓ "manobra de veículos sujeita à utilização de manobrista"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Link para convenção completa */}
+          <div className="mt-8 text-center">
+            <a 
+              href="https://drive.google.com/file/d/1Eze2a8Oww5tGmk3Qy0Zj5tK_UiOvDB2A/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full font-semibold hover:opacity-90 transition-opacity"
+            >
+              <FileText size={18} />
+              Ver Convenção Completa
+              <ExternalLink size={16} />
+            </a>
+          </div>
+        </div>
+
+        {/* Reflexão final */}
+        <div className="mt-16 bg-gradient-to-br from-primary/5 via-accent/5 to-primary/5 border-2 border-primary/10 rounded-2xl p-8 text-center">
+          <h3 className="text-2xl font-bold mb-6 font-display">💭 Reflita</h3>
+          <div className="space-y-4 max-w-3xl mx-auto text-lg text-muted-foreground leading-relaxed">
+            <p>
+              Não se trata de uma vaga para <strong className="text-foreground">uma pessoa</strong>. 
+              Existem outros moradores com moto que sequer sabem que têm esse direito na convenção.
+            </p>
+            <p>
+              Solicitar o cumprimento de uma regra que <strong className="text-primary">já existe</strong> não deveria 
+              resultar em <strong className="text-destructive">humilhação, ameaças e agressão</strong>.
+            </p>
+            <p>
+              <strong className="text-foreground">As 9 vagas para motos já são previstas na convenção</strong> — 
+              cabe ao síndico demarcá-las e oficializá-las. Isso é um <strong className="text-primary">bem comum</strong>, 
+              um direito de <strong className="text-primary">todos</strong> os moradores.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Timeline;
