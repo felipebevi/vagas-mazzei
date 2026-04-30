@@ -5,6 +5,7 @@ import Benefits from "@/components/Benefits";
 import GarageMap from "@/components/GarageMap";
 import Rules from "@/components/Rules";
 import Timeline from "@/components/Timeline";
+import LegalBasis from "@/components/LegalBasis";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -27,6 +28,7 @@ const Index = () => {
       <GarageMap />
       <Rules />
       <Timeline />
+      <LegalBasis />
       <Footer />
     </main>
   );
