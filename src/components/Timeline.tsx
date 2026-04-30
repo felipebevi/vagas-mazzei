@@ -1,4 +1,4 @@
-import { AlertTriangle, FileText, Scale, Shield, Heart, ExternalLink, Ban, Megaphone, Gavel, Users } from "lucide-react";
+import { AlertTriangle, FileText, Scale, Shield, Heart, ExternalLink, Ban, Megaphone, Gavel, Users, Car } from "lucide-react";
 import convencaoVagasMoto from "@/assets/convencao-vagas-moto.png";
 import convencaoManobrista from "@/assets/convencao-manobrista.png";
 
@@ -52,6 +52,12 @@ const Timeline = () => {
       color: "bg-highlight/10 border-highlight/30",
       title: "Via Judicial: Última Alternativa",
       description: "Sem resposta à notificação e após sofrer ameaças, a via judicial se tornou a única alternativa para garantir o cumprimento de algo que JÁ ESTÁ NA CONVENÇÃO — um direito de todos os moradores, não apenas de um.",
+    },
+    {
+      icon: <Car className="text-destructive" size={20} />,
+      color: "bg-destructive/10 border-destructive/30",
+      title: "25/04/2026 — Sem vagas emprestadas, carro vai para a rua",
+      description: "Acabaram as vagas livres que vizinhos solidários cediam temporariamente. A partir de 25/04/2026, sou obrigado a deixar meu carro estacionado na rua para proteger a motocicleta — bem muito mais fácil de furtar — dentro da garagem. O carro fica exposto a acidentes, intempéries e furto, com custo recorrente de jogo de travas de roda, prática frequente na nossa região, inclusive em frente ao prédio à luz do dia, como já ocorreu diversas vezes com outros vizinhos. Tudo isso porque o síndico se recusa a cumprir a convenção.",
     },
   ];
 
