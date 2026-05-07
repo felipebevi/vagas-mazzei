@@ -80,6 +80,13 @@ const Timeline = () => {
       description:
         "Acabaram as vagas livres que vizinhos solidários cediam temporariamente. A partir de 25/04/2026, sou obrigado a deixar meu carro estacionado na rua para proteger a motocicleta — bem muito mais fácil de furtar — dentro da garagem. O carro fica exposto a acidentes, intempéries e furto, com custo agregado de um jogo de travas de roda, para evitar o furto das mesmas, o que é uma prática frequente na nossa região, inclusive em frente ao prédio à luz do dia, como já ocorreu diversas vezes com outros vizinhos. Tudo isso porque o síndico se recusa a cumprir a convenção.",
     },
+    {
+      icon: <Gavel className="text-destructive" size={20} />,
+      color: "bg-destructive/10 border-destructive/30",
+      title: "06/05/2026 — Multa abusiva de 10 cotas condominiais sem direito de defesa",
+      description:
+        "O síndico enviou um comunicado com diversas acusações graves e mentirosas, informando unilateralmente a aplicação de multa de 10 cotas condominiais (o máximo permitido), sem o mínimo direito de defesa, contraditório ou justificativa formal. O mesmo comunicado passou a ser repetido como resposta automática para todas as minhas mensagens na administradora, encerrando de forma ditatorial e covarde qualquer canal de diálogo com a administração — ao invés de buscar entender o problema e construir uma solução. Some-se a isso a existência de um grupo paralelo de WhatsApp usado para alienar os demais moradores, criando um clima de exclusão e perseguição em vez de cooperação.",
+    },
   ];
 
   return (
