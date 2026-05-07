@@ -10,12 +10,41 @@ import {
   Gavel,
   Users,
   Car,
+  HandHeart,
 } from "lucide-react";
 import convencaoVagasMoto from "@/assets/convencao-vagas-moto.png";
 import convencaoManobrista from "@/assets/convencao-manobrista.png";
 
 const Timeline = () => {
   const events = [
+    {
+      icon: <HandHeart className="text-primary" size={20} />,
+      color: "bg-primary/10 border-primary/30",
+      title: "Nov/2024 — Candidatura voluntária a subsíndico",
+      description:
+        "Por livre e espontânea vontade, me candidatei a subsíndico e fui eleito pelos moradores. A intenção era ajudar o síndico, que aparentava estar sobrecarregado e sem conseguir cumprir as demandas do prédio.",
+    },
+    {
+      icon: <FileText className="text-primary" size={20} />,
+      color: "bg-primary/10 border-primary/30",
+      title: "Jan/2025 — Propostas enviadas ao síndico (vagas, bicicletas, elevadores)",
+      description:
+        "Logo após assumir, encaminhei ao síndico todos os documentos e sugestões para discutirmos e demarcarmos as vagas de moto previstas em convenção, além da organização do bicicletário e da contratação de uma empresa para cuidar dos elevadores. Fui sistematicamente ignorado em todos esses pontos.",
+    },
+    {
+      icon: <AlertTriangle className="text-warning" size={20} />,
+      color: "bg-warning/10 border-warning/30",
+      title: "Mar/2025 — Elevador quebra e expõe a falta de ação do síndico",
+      description:
+        'Um dos elevadores quebrou e o síndico chegou a comentar: "para que 2 elevadores gerando custo? apenas 1 funciona, no meu ap da praia é assim". Tive que negociar pessoalmente com a empresa de manutenção para reduzir o valor e viabilizar o reparo, depois de quase 6 meses com o equipamento parado. Não foi o síndico quem resolveu.',
+    },
+    {
+      icon: <AlertTriangle className="text-warning" size={20} />,
+      color: "bg-warning/10 border-warning/30",
+      title: "Fim de 2025 — Padrão de omissão se consolida",
+      description:
+        "Continuei cobrando ao longo do ano, mas ficou evidente que o síndico só quer parecer bonzinho para todos e empurra os problemas para frente — exatamente o que está fazendo agora com a questão das vagas de moto, gerando custo e ônus a todos os moradores por preciosismo e negligência.",
+    },
     {
       icon: <Megaphone className="text-primary" size={20} />,
       color: "bg-primary/10 border-primary/30",
