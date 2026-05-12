@@ -29,7 +29,7 @@ const Timeline = () => {
       color: "bg-primary/10 border-primary/30",
       title: "Jan/2025 — Propostas enviadas ao síndico (vagas, bicicletas, elevadores)",
       description:
-        "Logo após assumir, encaminhei ao síndico todos os documentos e sugestões para discutirmos e demarcarmos as 9 vagas de moto que sempre estiveram previstas na convenção do condomínio — inclusive sugerindo cobrar por elas como fonte de receita —, além da organização do bicicletário e da contratação de uma empresa para cuidar dos elevadores. Desde o início minha luta foi pelo cumprimento de algo que JÁ EXISTE na convenção, e fui sistematicamente ignorado em todos esses pontos.",
+        "Logo após assumir, encaminhei ao síndico todos os documentos e sugestões para discutirmos e demarcarmos as vagas de moto previstas em convenção, além da organização do bicicletário e da contratação de uma empresa para cuidar dos elevadores. Fui sistematicamente ignorado em todos esses pontos.",
     },
     {
       icon: <AlertTriangle className="text-warning" size={20} />,
@@ -71,7 +71,7 @@ const Timeline = () => {
       color: "bg-accent/20 border-accent/40",
       title: "Convenção Apresentada: 9 Vagas para Motos JÁ Existem",
       description:
-        "Durante a assembleia, a própria convenção do condomínio foi apresentada, reforçando o que eu venho dizendo desde o começo: JÁ EXISTEM 9 vagas para motocicletas previstas no documento oficial do condomínio. Nunca se tratou de criar nada novo — apenas de cumprir uma regra que sempre esteve lá e que o síndico, a administradora e a maioria dos moradores simplesmente ignoravam.",
+        "Durante a assembleia, a própria convenção do condomínio foi apresentada, revelando que JÁ EXISTEM 9 vagas para motocicletas previstas no documento oficial. Ninguém sequer sabia disso — nem síndico, nem administradora, nem moradores.",
       highlight: true,
     },
     {
