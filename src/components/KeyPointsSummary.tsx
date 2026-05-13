@@ -4,17 +4,17 @@ const points = [
   {
     title: "A lei obriga o síndico a cumprir a convenção",
     description:
-      "O Código Civil Brasileiro (Lei nº 10.406/2002), em seu artigo 1.348, inciso IV, é categórico: compete ao síndico cumprir e fazer cumprir a convenção, o regimento interno e as deliberações da assembleia. Não se trata de uma faculdade pessoal, mas de um dever legal expresso.",
+      "O Código Civil (art. 1.348, IV) determina que compete ao síndico cumprir e fazer cumprir a convenção. É dever legal, não escolha pessoal.",
   },
   {
     title: "A convenção exige vagas demarcadas para motos",
     description:
-      "A convenção do nosso condomínio, em seu item b.1.B, prevê de forma clara e objetiva a existência de 09 (nove) vagas destinadas a motocicletas. Essas vagas já pertencem ao empreendimento desde a sua origem — cabe à administração apenas demarcá-las e oficializá-las.",
+      "A convenção do condomínio (item b.1.B) prevê expressamente 09 (nove) vagas para motos. Cabe à administração apenas demarcá-las.",
   },
   {
     title: "O síndico descumpre, de forma arbitrária, a lei e a convenção",
     description:
-      "Mesmo diante de propostas formais, documentos técnicos e notificação extrajudicial, o síndico se recusa a demarcar as vagas previstas, ignorando tanto a lei quanto a convenção. Age de maneira arbitrária, sem diálogo e sem qualquer justificativa técnica ou jurídica que ampare a omissão.",
+      "Mesmo após propostas e notificação extrajudicial, o síndico se recusa a demarcar as vagas, ignorando a lei e a convenção, sem qualquer justificativa.",
   },
 ];
 
@@ -43,10 +43,10 @@ const KeyPointsSummary = () => {
                 {index + 1}
               </div>
               <div>
-                <h3 className="font-bold font-display text-lg leading-tight mb-2">
+                <h3 className="font-bold font-display text-xl leading-tight mb-2">
                   {point.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                   {point.description}
                 </p>
               </div>
