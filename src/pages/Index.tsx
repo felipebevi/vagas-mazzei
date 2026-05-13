@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import KeyPointsSummary from "@/components/KeyPointsSummary";
 import Problem from "@/components/Problem";
 import Solution from "@/components/Solution";
 import Benefits from "@/components/Benefits";
@@ -21,6 +22,7 @@ const Index = () => {
           </a>
         </p>
       </div>
+      <KeyPointsSummary />
       <Hero />
       <Problem />
       <Solution />
