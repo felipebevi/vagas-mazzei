@@ -34,7 +34,7 @@ const KeyPointsSummary = () => {
           </span>
           <h2 className="text-3xl md:text-4xl font-bold font-display mb-3">Pontos-chave</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Os três pilares jurídicos que sustentam este registro de transparência.
+            Os quatro pilares jurídicos que sustentam este registro de transparência.
           </p>
         </div>
 
