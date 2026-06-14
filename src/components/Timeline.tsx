@@ -181,6 +181,16 @@ const Timeline = () => {
                 >
                   <h4 className="font-bold text-lg mb-2 font-display">{event.title}</h4>
                   <p className="text-muted-foreground leading-relaxed">{event.description}</p>
+                  {event.image && (
+                    <div className="mt-4 image-frame max-w-lg">
+                      <img src={event.image} alt={event.imageCaption || "Documento"} className="w-full" />
+                      {event.imageCaption && (
+                        <div className="bg-card p-2 text-center">
+                          <p className="text-sm font-semibold text-success">{event.imageCaption}</p>
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
@@ -277,6 +287,9 @@ const Timeline = () => {
               <strong className="text-foreground">As 9 vagas para motos já são previstas na convenção</strong> — cabe ao
               síndico demarcá-las e oficializá-las. Isso é um <strong className="text-primary">bem comum</strong>, um
               direito de <strong className="text-primary">todos</strong> os moradores.
+            </p>
+            <p>
+              <strong className="text-primary">E não é novidade:</strong> em 02/06/2010, o próprio condomínio já aprovou por unanimidade uma vaga fixa para motocicleta. A própria defesa do condomínio, perante o Juízo, apresentou esse documento — o que por si só demonstra que <strong className="text-foreground">é perfeitamente possível e foi feito antes</strong>.
             </p>
           </div>
         </div>

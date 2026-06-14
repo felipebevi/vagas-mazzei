@@ -1,4 +1,4 @@
-import { Scale } from "lucide-react";
+import { Scale, History } from "lucide-react";
 
 const points = [
   {
@@ -15,6 +15,11 @@ const points = [
     title: "O síndico descumpre, de forma arbitrária, a lei e a convenção",
     description:
       "Mesmo após propostas e notificação extrajudicial, o síndico se recusa a demarcar as vagas, ignorando a lei e a convenção, sem qualquer justificativa.",
+  },
+  {
+    title: "Precedente histórico: vaga para moto já foi aprovada em 2010",
+    description:
+      "Em defesa perante o Juízo, o próprio condomínio apresentou ata de 02/06/2010 aprovando, por unanimidade, vaga fixa para moto. Isso invalida qualquer alegação de impossibilidade.",
   },
 ];
 
