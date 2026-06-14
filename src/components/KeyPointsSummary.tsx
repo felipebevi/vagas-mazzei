@@ -17,9 +17,9 @@ const points = [
       "Mesmo após propostas e notificação extrajudicial, o síndico se recusa a demarcar as vagas, ignorando a lei e a convenção, sem qualquer justificativa.",
   },
   {
-    title: "Precedente histórico: vaga para moto já foi aprovada em 2010",
+    title: "Precedente histórico: permissão para moto já existia em 2010",
     description:
-      "Em defesa perante o Juízo, o próprio condomínio apresentou ata de 02/06/2010 aprovando, por unanimidade, vaga fixa para moto. Isso invalida qualquer alegação de impossibilidade.",
+      "Em defesa perante o Juízo, o próprio condomínio apresentou ata de 02/06/2010 que previa, por unanimidade, permissão para motocicleta em vaga existente. Isso prova a previsibilidade e invalida qualquer alegação de impossibilidade hoje.",
   },
 ];
 
