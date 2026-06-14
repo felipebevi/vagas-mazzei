@@ -119,12 +119,13 @@ const Timeline = () => {
         "O síndico enviou um comunicado com diversas acusações graves e mentirosas, informando unilateralmente a aplicação de multa de 10 cotas condominiais (o máximo permitido), sem o mínimo direito de defesa, contraditório ou justificativa formal. O mesmo comunicado passou a ser repetido como resposta automática para todas as minhas mensagens na administradora, encerrando de forma ditatorial e covarde qualquer canal de diálogo com a administração — ao invés de buscar entender o problema e construir uma solução. Some-se a isso a existência de um grupo paralelo de WhatsApp usado para alienar os demais moradores, criando um clima de exclusão e perseguição em vez de cooperação.",
     },
     {
+      icon: <BookOpen className="text-success" size={20} />,
       color: "bg-success/10 border-success/30",
-      title: "Defesa do condomínio apresenta ata de 02/06/2010 — vaga para moto já foi aprovada antes",
+      title: "Defesa do condomínio apresenta ata de 02/06/2010 — permissão para moto já existia",
       description:
-        "Em sua defesa perante o Juízo, o próprio condomínio apresentou uma ata de assembleia de 02/06/2010 na qual foi aprovada, por unanimidade, uma vaga fixa para motocicleta do condômino da unidade 22. Isso por si só invalida qualquer alegação de que não seria possível determinar vagas para motos no condomínio.",
+        "Em sua defesa perante o Juízo, o próprio condomínio apresentou uma ata de assembleia de 02/06/2010 na qual foi aprovada, por unanimidade, a permanência de uma motocicleta em vaga existente do condômino da unidade 22. Não se tratava de uma vaga nova ou exclusiva, mas da permissão e previsibilidade de uso — exatamente o que poderia ser feito hoje. Isso por si só invalida qualquer alegação de que não seria possível.",
       image: ataVagaMoto2010,
-      imageCaption: "Trecho da ata de 02/06/2010: aprovação de vaga para moto",
+      imageCaption: "Trecho da ata de 02/06/2010: permissão aprovada por unanimidade",
       highlight: true,
     },
   ];
