@@ -60,6 +60,9 @@ const Solution = () => {
               <p className="text-muted-foreground">
                 Espaço que hoje não é utilizado por ninguém, transformado em vaga útil para motos.
               </p>
+              <p className="mt-3 text-sm bg-highlight/10 text-highlight border border-highlight/20 rounded-lg p-3">
+                <strong>OBS:</strong> Esta foi exatamente a solução adotada pelo condomínio em <strong>02/06/2010</strong> para o <strong>apartamento 22</strong>, quando havia apenas 1 moto no prédio — a moto foi autorizada a permanecer em vaga existente, sem necessidade de nova demarcação.
+              </p>
             </div>
           </div>
 
