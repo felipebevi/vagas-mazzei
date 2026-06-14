@@ -289,7 +289,7 @@ const Timeline = () => {
               direito de <strong className="text-primary">todos</strong> os moradores.
             </p>
             <p>
-              <strong className="text-primary">E não é novidade:</strong> em 02/06/2010, o próprio condomínio já aprovou por unanimidade uma vaga fixa para motocicleta. A própria defesa do condomínio, perante o Juízo, apresentou esse documento — o que por si só demonstra que <strong className="text-foreground">é perfeitamente possível e foi feito antes</strong>.
+              <strong className="text-primary">E não é novidade:</strong> em 02/06/2010, o próprio condomínio já aprovou por unanimidade a permanência de uma motocicleta em vaga existente. Não era uma vaga exclusiva, mas a <strong className="text-foreground">permissão e previsibilidade</strong> de uso — exatamente o que poderia ser feito hoje. A própria defesa do condomínio, perante o Juízo, apresentou esse documento, demonstrando que <strong className="text-foreground">é perfeitamente possível e já foi feito antes</strong>.
             </p>
           </div>
         </div>
