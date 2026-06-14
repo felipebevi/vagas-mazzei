@@ -11,9 +11,11 @@ import {
   Users,
   Car,
   HandHeart,
+  BookOpen,
 } from "lucide-react";
 import convencaoVagasMoto from "@/assets/convencao-vagas-moto.png";
 import convencaoManobrista from "@/assets/convencao-manobrista.png";
+import ataVagaMoto2010 from "@/assets/ata-vaga-moto-2010.png";
 
 const Timeline = () => {
   const events = [
@@ -116,6 +118,15 @@ const Timeline = () => {
       description:
         "O síndico enviou um comunicado com diversas acusações graves e mentirosas, informando unilateralmente a aplicação de multa de 10 cotas condominiais (o máximo permitido), sem o mínimo direito de defesa, contraditório ou justificativa formal. O mesmo comunicado passou a ser repetido como resposta automática para todas as minhas mensagens na administradora, encerrando de forma ditatorial e covarde qualquer canal de diálogo com a administração — ao invés de buscar entender o problema e construir uma solução. Some-se a isso a existência de um grupo paralelo de WhatsApp usado para alienar os demais moradores, criando um clima de exclusão e perseguição em vez de cooperação.",
     },
+    {
+      color: "bg-success/10 border-success/30",
+      title: "Defesa do condomínio apresenta ata de 02/06/2010 — vaga para moto já foi aprovada antes",
+      description:
+        "Em sua defesa perante o Juízo, o próprio condomínio apresentou uma ata de assembleia de 02/06/2010 na qual foi aprovada, por unanimidade, uma vaga fixa para motocicleta do condômino da unidade 22. Isso por si só invalida qualquer alegação de que não seria possível determinar vagas para motos no condomínio.",
+      image: ataVagaMoto2010,
+      imageCaption: "Trecho da ata de 02/06/2010: aprovação de vaga para moto",
+      highlight: true,
+    },
   ];
 
   return (
@@ -170,6 +181,16 @@ const Timeline = () => {
                 >
                   <h4 className="font-bold text-lg mb-2 font-display">{event.title}</h4>
                   <p className="text-muted-foreground leading-relaxed">{event.description}</p>
+                  {event.image && (
+                    <div className="mt-4 image-frame max-w-lg">
+                      <img src={event.image} alt={event.imageCaption || "Documento"} className="w-full" />
+                      {event.imageCaption && (
+                        <div className="bg-card p-2 text-center">
+                          <p className="text-sm font-semibold text-success">{event.imageCaption}</p>
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
@@ -266,6 +287,9 @@ const Timeline = () => {
               <strong className="text-foreground">As 9 vagas para motos já são previstas na convenção</strong> — cabe ao
               síndico demarcá-las e oficializá-las. Isso é um <strong className="text-primary">bem comum</strong>, um
               direito de <strong className="text-primary">todos</strong> os moradores.
+            </p>
+            <p>
+              <strong className="text-primary">E não é novidade:</strong> em 02/06/2010, o próprio condomínio já aprovou por unanimidade uma vaga fixa para motocicleta. A própria defesa do condomínio, perante o Juízo, apresentou esse documento — o que por si só demonstra que <strong className="text-foreground">é perfeitamente possível e foi feito antes</strong>.
             </p>
           </div>
         </div>

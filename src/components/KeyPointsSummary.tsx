@@ -1,4 +1,4 @@
-import { Scale } from "lucide-react";
+import { Scale, History } from "lucide-react";
 
 const points = [
   {
@@ -16,6 +16,11 @@ const points = [
     description:
       "Mesmo após propostas e notificação extrajudicial, o síndico se recusa a demarcar as vagas, ignorando a lei e a convenção, sem qualquer justificativa.",
   },
+  {
+    title: "Precedente histórico: vaga para moto já foi aprovada em 2010",
+    description:
+      "Em defesa perante o Juízo, o próprio condomínio apresentou ata de 02/06/2010 aprovando, por unanimidade, vaga fixa para moto. Isso invalida qualquer alegação de impossibilidade.",
+  },
 ];
 
 const KeyPointsSummary = () => {
@@ -29,7 +34,7 @@ const KeyPointsSummary = () => {
           </span>
           <h2 className="text-3xl md:text-4xl font-bold font-display mb-3">Pontos-chave</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Os três pilares jurídicos que sustentam este registro de transparência.
+            Os quatro pilares jurídicos que sustentam este registro de transparência.
           </p>
         </div>
 
