@@ -11,9 +11,11 @@ import {
   Users,
   Car,
   HandHeart,
+  BookOpen,
 } from "lucide-react";
 import convencaoVagasMoto from "@/assets/convencao-vagas-moto.png";
 import convencaoManobrista from "@/assets/convencao-manobrista.png";
+import ataVagaMoto2010 from "@/assets/ata-vaga-moto-2010.png";
 
 const Timeline = () => {
   const events = [
