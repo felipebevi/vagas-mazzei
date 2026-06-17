@@ -17,6 +17,11 @@ const points = [
       "Mesmo após propostas e notificação extrajudicial, o síndico se recusa a demarcar as vagas, ignorando a lei e a convenção, sem qualquer justificativa.",
   },
   {
+    title: "Assembleia forçada com advogado para alterar convenção e eliminar direito",
+    description:
+      "Em 16/06/2026, o síndico mobilizou morador por morador para garantir quorum, contratou advogado e promoveu votação sem transparência para substituir a convenção vigente por uma versão anterior que omite as vagas de moto — abuso de poder para perseguir quem questionou a aplicação seletiva de regras.",
+  },
+  {
     title: "Precedente histórico: permissão para moto já existia em 2010",
     description:
       "Em defesa perante o Juízo, o próprio condomínio apresentou ata de 02/06/2010 que previa, por unanimidade, permissão para motocicleta em vaga existente. Isso prova a previsibilidade e invalida qualquer alegação de impossibilidade hoje.",

@@ -128,6 +128,13 @@ const Timeline = () => {
       imageCaption: "Trecho da ata de 02/06/2010: permissão aprovada por unanimidade",
       highlight: true,
     },
+    {
+      icon: <AlertTriangle className="text-destructive" size={20} />,
+      color: "bg-destructive/10 border-destructive/30",
+      title: "16/06/2026 — Assembleia forçada e alteração da convenção para versão mais antiga",
+      description:
+        "O síndico convocou morador por morador individualmente para garantir quorum em assembleia extraordinária, contratou um advogado para presidir a votação, e sem apresentar clareza ou explicações substanciais, promoveu a alteração da convenção vigente para uma versão anterior que omite as 9 vagas de moto. A medida, claramente direcionada a eliminar o direito questionado, configurou abuso de poder e isolamento de um único morador que ousou exigir isonomia na aplicação das regras.",
+    },
   ];
 
   return (
